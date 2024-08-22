@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,91 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/d3186edc9d.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                btn: '#ABEF5F',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        btn: '#ABEF5F',
+                        background: '#FFFFFF',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <header>
-      
+
+<body class="manrope-font">
+    <header class="bg-background">
+        <div class="container mx-auto navbar">
+            <div class="navbar-start">
+
+                <a class="text-[#212121] font-bold text-2xl space-x-2"><span
+                        class="rounded-full px-2 pb-1 bg-[#ABEF5F] "><i
+                            class="fa-solid fa-arrow-right -rotate-45 text-xl text-[#1C1C1C] "></i></span> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="space-x-5 menu-horizontal  text-base text-slate-500 lg:mr-36 ">
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Home</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Services</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Portfolio</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Blogs</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="navbar-end space-x-5 hidden md:flex lg:flex">
+                <span class="bg-slate-200 rounded-full p-2 px-3"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="bg-slate-200 rounded-full p-2 px-3"><i class="fa-solid fa-cart-shopping"></i></span>
+                <a class="btn text-base font-bold bg-btn rounded-full">Book Consult <span
+                        class=" bg-slate-900 rounded-full p-1 px-2"><i
+                            class="fa-solid fa-arrow-right -rotate-45 text-white"></i></span>
+
+                </a>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn  btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-20" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36  p-2 shadow ">
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Home</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Services</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Portfolio</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Blogs</a></li>
+                    <li class="hover:text-black duration-300 ease-in-out"><a>Contact Us</a></li>
+
+                    <div class="mt-5 space-y-3 h-40 ">
+                        <span class="bg-slate-200 rounded-full p-2 px-3"><i
+                                class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="bg-slate-200 rounded-full p-2 px-3 ml-3"><i
+                                class="fa-solid fa-cart-shopping"></i></span>
+                        <a class="btn text-base font-bold bg-btn rounded-full">Book Consult <span
+                                class=" bg-slate-900 rounded-full p-1 px-2"><i
+                                    class="fa-solid fa-arrow-right -rotate-45 text-white"></i></span>
+
+                        </a>
+                    </div>
+
+                </ul>
+
+            </div>
+        </div>
     </header>
     <main>
 
@@ -33,4 +103,5 @@
 
     </footer>
 </body>
+
 </html>
