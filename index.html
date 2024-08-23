@@ -38,7 +38,7 @@
 <body class="manrope-font">
     <header class="bg-background">
         <!-- navber start here -->
-        <div class="container mx-auto navbar">
+        <div class="container mx-auto navbar overflow-hidden">
             <div class="navbar-start">
 
                 <a class="text-[#212121] font-bold text-2xl space-x-2"><span
@@ -99,8 +99,8 @@
         <!-- navber end here -->
 
         <!-- header start here -->
-        <section class="w-screen flex flex-col items-center justify-center ">
-            <div class="w-3/5 ml-0 lg:ml-24">
+        <section class="w-full flex flex-col items-center justify-center overflow-hidden ">
+            <div class="w-full lg:w-3/5 ml-0 lg:ml-24">
                 <img class="w-full" src="./assets/banner.png" alt="">
             </div>
             <div class="flex flex-col items-center justify-center mt-5 space-y-4">
@@ -111,7 +111,7 @@
                 <p class="text-center text-[#494949] text-xs lg:ml-72">The barn house captivates with its blend of
                     rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and
                     large windows that flood the space with natural light.</p>
-                <div class="bg-[#93ce4f92] px-24 py-3 lg:px-3 lg:py-2 rounded-full lg:ml-56">
+                <div class="bg-[#93ce4f92] px-24 py-3 lg:px-3 lg:py-2 rounded-full ml-0 lg:ml-56">
                     <button class="text-[#212121] font-semibold">View Details <span
                             class="ml-2 bg-btn rounded-full p-1 px-2"><i
                                 class="fa-solid fa-arrow-right -rotate-45"></i></span></button>
@@ -123,9 +123,10 @@
     </header>
     <main>
         <!-- design section start here -->
-        <section class=" bg-gray-100  mt-10">
-            <div class="relative pt-4 ">
-                <div class="  ml-16 hidden lg:flex relative z-10 border-2 py-8 border-dotted w-32 ">
+
+        <section class=" bg-gray-100  mt-10"> 
+            <div class="relative pt-4">
+                <div class="  ml-16 hidden lg:flex relative z-10 border-2 py-8 border-dotted lg:w-32 ">
                     <img src="./assets/Vector.png" alt="">
                 </div>
                 <div class="mt-5 absolute left-40 md:left-80 lg:left-32 top-10 lg:top-24 -z-0 ">
@@ -136,7 +137,7 @@
             </div>
 
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 container mx-auto  ">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 container mx-auto overflow-hidden ">
                 <div class=" mt-28 lg:mt-10 space-y-9">
                     <h3 class="text-2xl lg:text-4xl text-center lg:text-left font-bold text-slate-900">We design
                         thoughtful, liveable spaces</h3>
@@ -170,7 +171,7 @@
                 </div>
             </div>
 
-            <div
+             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 container mx-auto mt-20 bg-white rounded-2xl">
                 <div class="p-5 flex flex-col items-center justify-center space-y-2">
                     <span><i class="fa-regular fa-message"></i></span>
@@ -195,7 +196,7 @@
                 </div>
             </div>
 
-            <!-- work prcess section start here -->
+            <!-- work process section start here -->
             <div class="pt-16 container mx-auto pb-12">
                 <div class="text-center space-y-3">
                     <button class="bg-white px-4 py-2 rounded-full"><span class=""><i
@@ -229,9 +230,62 @@
                     </div>
                 </div>
             </div>
-            <!-- work prcess section end here -->
+            <!-- work process section end here -->
         </section>
+
         <!-- design section end here -->
+
+        <!-- our portfolio section start here -->
+         <section class="w-full bg-[#FFFFFF]  "> 
+             <div class="space-y-3 text-center mt-12">
+                <button class="px-3 py-2 rounded-full bg-[#ABEF5F33] font-semibold"><span class=""><i
+                    class="fa-solid fa-arrow-right pr-2"></i></span>Explore our Latest works</button>
+                <h3 class="text-4xl font-bold text-[#212121]">Our Latest Portfolio</h3>
+                <p class="text-xs text-[#494949]">Our latest portfolio showcases a barn house with a striking design that blends rustic charm with modern elegance, <br> creating a bold and captivating architectural statement.</p>
+            </div> 
+            <div class="flex flex-col lg:flex-row justify-between container mx-auto mt-10  gap-4 ">
+                <div class="flex flex-col md:flex-row lg:flex-row justify-between w-full lg:w-2/3 border border-[rgb(233, 233, 233)] rounded-lg p-5 gap-4 ">
+                    <div class="w-full lg:w-[800px] border-2 border-dashed ">
+                        <img class="w-full h-full" src="./assets/img1.png" alt="">
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-semibold text-2xl">Commercial</h4>
+                        <p class="text-base text-[#737373]">Our latest portfolio features a striking commercial design that seamlessly combines modern aesthetics with functionality, creating an impressive and professional environment.</p>
+                        <h5 class="font-bold  text-base text-[#212121] pt-2 ">View Details <span class="pl-2 bg-btn rounded-full pr-2 p-1"><i
+                            class="fa-solid fa-arrow-right -rotate-45 "></i></span></h5>
+                    </div>
+                </div>
+                <div class=" w-full lg:w-1/3 border border-[rgb(233, 233, 233)] p-5 rounded-lg ">
+                    <img class="border-2 border-dashed w-full h-full" src="./assets/img2.png" alt="">
+
+                </div>
+            </div> 
+
+            <div class="flex flex-col-reverse lg:flex-row justify-between gap-4 container mx-auto mt-4 ">
+                <div class="w-full  lg:w-1/4  border border-[rgb(233, 233, 233)] rounded-lg p-5">
+                    <img class="  border-2 border-dashed w-full h-full" src="./assets/img3.png" alt="">
+                </div>
+                <div class="flex flex-col  lg:flex-row justify-between gap-4 w-full lg:w-2/4 border border-[rgb(233, 233, 233)] rounded-lg p-5">
+                    <div>
+                        <img class=" border-2 border-dashed w-full lg:w-[800px] h-full" src="./assets/img4.png" alt="">
+                    </div>
+                    <div class="space-y-3">
+                        <h4 class="font-semibold text-2xl"> Modern Design Excellence</h4>
+                        <p class="text-base text-[#737373]"> It emphasizes simplicity while maximizing impact, using innovative materials and technologies.  </p>
+                        <h5 class="font-bold  text-base text-[#212121] pt-2 ">View Details <span class="pl-2 bg-btn rounded-full pr-2 p-1"><i
+                            class="fa-solid fa-arrow-right -rotate-45 "></i></span></h5>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/4 border border-[rgb(233, 233, 233)] rounded-lg p-5">
+                    <img class=" border-2 border-dashed w-full h-full" src="./assets/img5.png" alt="">
+                </div>
+            </div> 
+             <div class="w-full container mx-auto border border-[rgb(233, 233, 233)] rounded-lg p-5 lg:hidden mt-4">
+                <img class=" border-2 border-dashed w-full h-full" src="./assets/img5.png" alt="">
+            </div>
+
+         </section>
+        <!-- < our portfolio section end here -->
 
     </main>
     <footer>
